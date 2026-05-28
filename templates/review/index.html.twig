@@ -16,6 +16,24 @@
         <li>Your controller at <code>/app/src/Controller/ReviewController.php</code></li>
         <li>Your template at <code>/app/templates/review/index.html.twig</code></li>
     </ul>
-    <p>{{ form(review_form) }}</p>
+    {{ form(review_form) }}
+    <div>
+        {% for review in reviews %}
+            <div>
+                {# @var review \App\Entity\Review #}
+                <span>{{ review.getCompany().getName() }}</span>
+                <span>{{ review.getRating() }}</span>
+                <span>{{ review.getReviewText() }}</span>
+                <span>{{ review.getCreatedAt().format('Y.m.d. H:i:s') }}</span>
+            </div>
+        {% endfor %}
+    </div>
+    {% if (cursor) %}
+        <a href="{{ path('app_reviews') }}">legfrissebb</a>
+    {% endif %}
+
+    {% if (lastId) %}
+        <a href="{{ path('app_reviews', {cursor: lastId}) }}">több elem</a>
+    {% endif %}
 </div>
 {% endblock %}
