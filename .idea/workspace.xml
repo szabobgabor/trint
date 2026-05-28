@@ -4,34 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff44b6ef-51ce-4979-920f-d892e2688589" name="Changes" comment="symfony docker as a base">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trint.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.override.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.prod.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/agents.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/alpine.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/digitalocean-dns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/digitalocean-droplet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/existing-project.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/extra-services.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/makefile.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mysql.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/production.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tls.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/troubleshooting.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/updating.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/xdebug.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankenphp/Caddyfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankenphp/conf.d/10-app.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankenphp/conf.d/20-app.dev.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankenphp/conf.d/20-app.prod.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frankenphp/docker-entrypoint.sh" beforeDir="false" />
+    <list default="true" id="ff44b6ef-51ce-4979-920f-d892e2688589" name="Changes" comment="symfony docker as a base, initialized symfony 7.4.*">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.override.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.override.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/reference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +79,21 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php84" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -143,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1779786480872</updated>
       <workItem from="1779786482015" duration="891000" />
-      <workItem from="1779787532477" duration="2156000" />
+      <workItem from="1779787532477" duration="3781000" />
     </task>
     <task id="LOCAL-00001" summary="symfony docker as a base">
       <option name="closed" value="true" />
@@ -153,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779786562021</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="symfony docker as a base, initialized symfony 7.4.*">
+      <option name="closed" value="true" />
+      <created>1779955093169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779955093169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="symfony docker as a base" />
-    <option name="LAST_COMMIT_MESSAGE" value="symfony docker as a base" />
+    <MESSAGE value="symfony docker as a base, initialized symfony 7.4.*" />
+    <option name="LAST_COMMIT_MESSAGE" value="symfony docker as a base, initialized symfony 7.4.*" />
   </component>
 </project>
