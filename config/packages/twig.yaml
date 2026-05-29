@@ -1,6 +1,12 @@
 twig:
     file_name_pattern: '*.twig'
-    auto_reload: true
+
+when@dev:
+    twig:
+        debug: true
+        strict_variables: true
+        auto_reload: true
+        cache: false
 
 when@test:
     twig:

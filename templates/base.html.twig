@@ -18,6 +18,10 @@
         {% endif %}
     </head>
     <body>
+        <header>
+            <a href="/">Home</a>
+            <a href="{{ path('app_company_stats') }}">Companies</a>
+        </header>
         {% block body %}{% endblock %}
     </body>
 </html>
