@@ -10,11 +10,11 @@ use App\Entity\Review;
 use App\Repository\CompanyRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
-class CreateReviewHandler
+readonly class CreateReviewHandler
 {
     public function __construct(
-        private readonly EntityManagerInterface $entityManager,
-        private readonly CompanyRepository $companyRepository,
+        private EntityManagerInterface $entityManager,
+        private CompanyRepository      $companyRepository,
     )
     {}
     public function __invoke(CreateReviewDTO $dto): void
