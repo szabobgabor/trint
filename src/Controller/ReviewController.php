@@ -41,6 +41,7 @@ final class ReviewController extends AbstractController
             'reviews' => $reviews,
             'cursor' => $cursor,
             'lastId' => $lastId,
+            'hasError' => $form->isSubmitted() && !$form->isValid(),
         ]);
     }
 

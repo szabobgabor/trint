@@ -27,7 +27,8 @@ readonly class GetCompanyStatsHandler
             ->from('review', 'r')
             ->innerJoin('r', 'company', 'c', 'r.company_id = c.id')
             ->groupBy('c.id')
-            ->addGroupBy('c.name');
+            ->addGroupBy('c.name')
+            ->orderBy('avg_rating', 'DESC');
 
         $rows = $qb->executeQuery()->fetchAllAssociative();
 

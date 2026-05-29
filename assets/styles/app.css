@@ -1,0 +1,46 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 1fr 2rem;
+    min-height: 100vh;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+
+footer {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.review {
+    padding: 1rem;
+    background-color: #eee;
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-areas: "name rating" "text text" ". created";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 10rem;
+    grid-gap: 1rem;
+
+    .text { grid-area: text; }
+    .created { grid-area: created; }
+    .rating { grid-area: rating; }
+    .name { grid-area: name; }
+
+}

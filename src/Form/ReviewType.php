@@ -18,7 +18,7 @@ class ReviewType extends AbstractType
             ->add('reviewText')
             ->add('authorEmail')
             ->add('save', SubmitType::class, [
-                'label' => 'Mentés',
+                'label' => 'Save Review',
             ]);
         ;
     }
